@@ -1,0 +1,127 @@
+@import"../components/_variables.scss";
+@import"../base/_smart-grid.scss";
+
+
+main{
+  width: 100%;
+}
+.gallery{
+  @include md(background,#efefef);
+  width: 100%;
+  background: transparent url(../images/2.jpg) no-repeat center center;
+  padding-top: 40px;
+  border-bottom: 3px solid $main-red;
+}
+.blocks-gallery{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &__item{
+    flex-basis: 306px;
+    text-align: center;
+    img{
+      max-width: 100%;
+      border-bottom: 1px solid $main-red;
+    }
+
+  }
+}
+.link-g{
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: 400;
+  margin: 20px 0;
+  border-bottom: 3px solid transparent;
+  transition: 0.5s;
+}
+.link-g:hover{
+  border-bottom: 3px solid $main-red;
+  transition: 0.5s;
+}
+.callback{
+  width: 100%;
+  background: #fff;
+  &__title{
+    @include xs(font-size,20px);
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-top: 42px;
+    font-family: $RobotoLight, sans-serif;
+    text-align: center;
+  }
+  &__form{
+    width: 100%;
+  }
+}
+#form{
+  width: 100%;
+}
+.input{
+  @include sm(width,100%);
+  width: 49%;
+  display: inline-block;
+  input{
+    margin: auto;
+    background: #efefef;
+    border-radius: 10px;
+    width: 100%;
+    border:none;
+    color: #7F7F7F;
+    letter-spacing: 4px;
+    min-height: 39px;
+    font-weight: bold;
+    padding: 15px;
+  }
+  label{
+    font-size: 17px;
+    line-height: 19px;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+.input-wrapper{
+  margin-top: 15px;
+  textarea{
+    background: #efefef;
+    border-radius: 10px;
+    width: 100%;
+    border:none;
+    color: #7F7F7F;
+    letter-spacing: 4px;
+    min-height: 39px;
+    font-weight: bold;
+    padding: 15px;
+    min-height: 176px;
+  }
+}
+.send-btn{
+  color: #FFFFFF;
+  border-color: #6B6B6B;
+  line-height: 14px;
+  font-size: 17px;
+  background-color: #DE3838;
+  border-radius: 10px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  width: 286px;
+  border:none;
+  text-align: center;
+  padding: 20px 0;
+  margin: 30px auto;
+  display: block;
+  cursor: pointer;
+}
+.text{
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 26px;
+  min-height: 128px;
+  line-height: 23px;
+  background-color: transparent;
+  text-align: justify;
+}

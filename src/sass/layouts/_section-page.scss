@@ -1,0 +1,39 @@
+@import"../components/_variables.scss";
+@import"../base/_smart-grid.scss";
+
+.text-block{
+  width: 100%;
+
+}
+.section_title{
+  width: 100%;
+  text-align: center;
+}
+.section_sub_title{
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.section_list{
+  margin-left: 60px;
+  &__item{
+    list-style-type: decimal;
+    margin: 5px;
+  }
+}
+.name_service{
+  cursor: default;
+  padding: 20px;
+}
+
+.name_service::after{
+  display: block;
+  content: "";
+  margin-top: 10px;
+  width: 60px;
+  height: 3px;
+  background: #000;
+}
+p{
+  font-size: 17px;
+}
